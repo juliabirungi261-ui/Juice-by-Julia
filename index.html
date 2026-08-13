@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Juice by Julia - fresh fruit juices and smoothies in Namungoona. Delivery available.">
+<title>Home | Juice by Julia</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="container nav"><a href="index.html"><img class="logo" src="images/logo.png" alt="Juice by Julia logo"></a>
+<button class="menu" aria-label="Open menu">☰</button><nav><a href="index.html" class="active">Home</a><a href="juices.html" class="">Our Juices</a><a href="about.html" class="">About Us</a><a href="delivery.html" class="">Delivery</a><a href="contact.html" class="">Contact</a></nav></div></header>
+<main>
+<section class="hero"><div class="container hero-grid">
+<div><span class="eyebrow">Fresh • Natural • Delicious</span><h1>Freshness in <span>Every Sip.</span></h1>
+<p>Welcome to Juice by Julia. We make refreshing fruit juices and smoothies and deliver them to you in Namungoona.</p>
+<div class="actions"><a class="btn primary" href="tel:0778279427">Call to Order</a><a class="btn secondary" href="juices.html">View Our Juices</a></div></div>
+<div class="hero-art"><img src="images/mango-juice.png" alt="Fresh mango juice"><small>Fresh fruit goodness by Julia</small></div>
+</div></section>
+<section class="section"><div class="container"><div class="heading"><span class="eyebrow">Welcome</span><h2>Good fruit. <span>Great taste.</span></h2><p>Explore our juices, learn about us, and place your order for delivery.</p></div>
+<div class="products">
+<div class="card"><img src="images/mango-juice.png" alt="Mango juice"><div class="card-body"><h3>Mango Juice</h3><p>Sweet, smooth and naturally refreshing.</p><a class="btn primary" href="juices.html">See Menu</a></div></div>
+<div class="card"><img src="images/passion-juice.png" alt="Passion juice"><div class="card-body"><h3>Passion Juice</h3><p>Bright, tangy and full of tropical flavour.</p><a class="btn primary" href="juices.html">See Menu</a></div></div>
+<div class="card"><img src="images/avocado-juice.png" alt="Avocado juice"><div class="card-body"><h3>Avocado Juice</h3><p>Rich, creamy and deliciously satisfying.</p><a class="btn primary" href="juices.html">See Menu</a></div></div>
+</div></div></section>
+<section class="delivery"><div class="container section"><div class="heading" style="color:#fff"><span class="eyebrow" style="color:#ffb06c">Delivery Available</span><h2>Fresh juice, delivered to you.</h2><p style="color:#e5f0e4">Order by phone or email and enjoy Juice by Julia wherever you are.</p><div class="actions" style="justify-content:center"><a class="btn secondary" href="tel:0778279427">0778 279 427</a></div></div></div></section>
+</main>
+<footer><div class="container foot"><div><img src="images/logo.png" alt="Juice by Julia logo"></div>
+<div class="foot-links"><a href="juices.html">Our Juices</a><a href="delivery.html">Delivery</a><a href="contact.html">Contact</a></div>
+<p class="copy">© <span class="year"></span> Juice by Julia. Fresh juice. Fresh moments.</p></div></footer>
+<script>
+document.querySelector(".menu").addEventListener("click",()=>document.querySelector("nav").classList.toggle("open"));
+document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>document.querySelector("nav").classList.remove("open")));
+document.querySelectorAll(".year").forEach(x=>x.textContent=new Date().getFullYear());
+</script></body></html>

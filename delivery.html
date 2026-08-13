@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Juice by Julia - fresh fruit juices and smoothies in Namungoona. Delivery available.">
+<title>Delivery | Juice by Julia</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="container nav"><a href="index.html"><img class="logo" src="images/logo.png" alt="Juice by Julia logo"></a>
+<button class="menu" aria-label="Open menu">☰</button><nav><a href="index.html" class="">Home</a><a href="juices.html" class="">Our Juices</a><a href="about.html" class="">About Us</a><a href="delivery.html" class="active">Delivery</a><a href="contact.html" class="">Contact</a></nav></div></header>
+<main>
+<section class="page-hero"><div class="container"><span class="eyebrow">Delivery</span><h1>Fresh Juice, <span>Your Way.</span></h1><p>We do delivery so you can enjoy Juice by Julia without leaving home or work.</p></div></section>
+<section class="section"><div class="container two-col"><div class="copy"><span class="eyebrow">How to Order</span><h2>Order in <span>three easy steps.</span></h2>
+<div class="features"><div class="feature"><strong>1. Choose your drink</strong>Select mango, passion, watermelon, avocado juice or a smoothie.</div><div class="feature"><strong>2. Contact Julia</strong>Call 0778 279 427 or email juliabirungi261@gmail.com.</div><div class="feature"><strong>3. Get your delivery</strong>Tell us where to deliver your order in Namungoona and we'll arrange delivery.</div></div></div>
+<div class="visual"><img src="images/mango-juice.png" alt="Mango juice ready for delivery"></div></div></section>
+</main>
+<footer><div class="container foot"><div><img src="images/logo.png" alt="Juice by Julia logo"></div>
+<div class="foot-links"><a href="juices.html">Our Juices</a><a href="delivery.html">Delivery</a><a href="contact.html">Contact</a></div>
+<p class="copy">© <span class="year"></span> Juice by Julia. Fresh juice. Fresh moments.</p></div></footer>
+<script>
+document.querySelector(".menu").addEventListener("click",()=>document.querySelector("nav").classList.toggle("open"));
+document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>document.querySelector("nav").classList.remove("open")));
+document.querySelectorAll(".year").forEach(x=>x.textContent=new Date().getFullYear());
+</script></body></html>

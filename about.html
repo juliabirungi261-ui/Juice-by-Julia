@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Juice by Julia - fresh fruit juices and smoothies in Namungoona. Delivery available.">
+<title>About Us | Juice by Julia</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="container nav"><a href="index.html"><img class="logo" src="images/logo.png" alt="Juice by Julia logo"></a>
+<button class="menu" aria-label="Open menu">☰</button><nav><a href="index.html" class="">Home</a><a href="juices.html" class="">Our Juices</a><a href="about.html" class="active">About Us</a><a href="delivery.html" class="">Delivery</a><a href="contact.html" class="">Contact</a></nav></div></header>
+<main>
+<section class="page-hero"><div class="container"><span class="eyebrow">About Us</span><h1>Freshness by <span>Julia</span></h1><p>We make fruit drinks with a simple goal: great taste and fresh moments.</p></div></section>
+<section class="section"><div class="container two-col"><div class="visual"><img src="images/passion-juice.png" alt="Fresh passion juice"></div>
+<div class="copy"><span class="eyebrow">Juice by Julia</span><h2>Made with <span>freshness</span> in mind.</h2>
+<p>Juice by Julia is a fruit juice and smoothie business based in Namungoona. We serve refreshing mango, passion, watermelon and avocado juices, together with smoothies.</p>
+<div class="features"><div class="feature"><strong>🍃 Fresh</strong>Fruit-focused drinks prepared with care.</div><div class="feature"><strong>🥤 Delicious</strong>Flavours made for everyday enjoyment.</div><div class="feature"><strong>🚚 Convenient</strong>Delivery available for your order.</div></div></div></div></section>
+</main>
+<footer><div class="container foot"><div><img src="images/logo.png" alt="Juice by Julia logo"></div>
+<div class="foot-links"><a href="juices.html">Our Juices</a><a href="delivery.html">Delivery</a><a href="contact.html">Contact</a></div>
+<p class="copy">© <span class="year"></span> Juice by Julia. Fresh juice. Fresh moments.</p></div></footer>
+<script>
+document.querySelector(".menu").addEventListener("click",()=>document.querySelector("nav").classList.toggle("open"));
+document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>document.querySelector("nav").classList.remove("open")));
+document.querySelectorAll(".year").forEach(x=>x.textContent=new Date().getFullYear());
+</script></body></html>
